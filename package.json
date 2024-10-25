@@ -1,0 +1,71 @@
+{
+  "name": "rollup-webpack-umd",
+  "type": "module",
+  "version": "0.1.1",
+  "description": "Rewrite to Webpack like UMD format",
+  "author": "Chilfish",
+  "license": "MIT",
+  "keywords": [
+    "vite",
+    "webpack",
+    "rollup",
+    "transform"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./*": "./*"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./*"
+      ]
+    }
+  },
+  "files": [
+    "*.d.ts",
+    "dist"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "build": "tsup src/*.ts --format cjs,esm --dts --splitting --clean",
+    "dev": "tsup src/*.ts --watch src",
+    "lint": "eslint .",
+    "lint:fix": "nr lint --fix",
+    "typecheck": "tsc",
+    "play": "npm -C playground run dev",
+    "prepublishOnly": "nr build",
+    "release": "bumpp && pnpm publish",
+    "start": "esno src/index.ts",
+    "test": "vitest",
+    "test:run": "vitest run"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.8.0",
+    "bumpp": "^9.7.1",
+    "eslint": "^9.13.0",
+    "esno": "^4.8.0",
+    "publint": "^0.2.12",
+    "rollup": "^4.24.0",
+    "tsup": "^8.3.4",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10",
+    "vitest": "^2.1.3"
+  }
+}
