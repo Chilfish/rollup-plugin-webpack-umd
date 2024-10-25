@@ -5,6 +5,14 @@
   "description": "Rewrite to Webpack like UMD format",
   "author": "Chilfish",
   "license": "MIT",
+  "homepage": "https://github.com/Chilfish/rollup-plugin-webpack-umd",
+  "repository": {
+    "type": "git",
+    "url": "https//github.com/Chilfish/rollup-plugin-webpack-umd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Chilfish/rollup-plugin-webpack-umd/issues"
+  },
   "keywords": [
     "vite",
     "webpack",
