@@ -1,7 +1,7 @@
 {
   "name": "rollup-webpack-umd",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Rewrite to Webpack like UMD format",
   "author": "Chilfish",
   "license": "MIT",
@@ -56,19 +56,16 @@
     "test": "vitest",
     "test:run": "vitest run"
   },
-  "dependencies": {
-    "@rollup/pluginutils": "^5.1.0"
-  },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.5.1",
-    "bumpp": "^9.5.2",
-    "eslint": "^9.10.0",
-    "esno": "^4.7.0",
-    "publint": "^0.2.10",
-    "rollup": "^4.21.3",
-    "tsup": "^8.2.4",
-    "typescript": "^5.6.2",
-    "vite": "^5.4.4",
-    "vitest": "^2.0.5"
+    "@antfu/eslint-config": "^3.8.0",
+    "bumpp": "^9.7.1",
+    "eslint": "^9.13.0",
+    "esno": "^4.8.0",
+    "publint": "^0.2.12",
+    "rollup": "^4.24.0",
+    "tsup": "^8.3.4",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10",
+    "vitest": "^2.1.3"
   }
 }
