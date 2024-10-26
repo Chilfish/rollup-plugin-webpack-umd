@@ -1,7 +1,7 @@
 {
   "name": "rollup-webpack-umd",
   "type": "module",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Rewrite to Webpack like UMD format",
   "author": "Chilfish",
   "license": "MIT",
